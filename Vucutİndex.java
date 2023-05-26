@@ -20,8 +20,5 @@ public class Vucutİndex {
             System.out.print("Boy ve Kg 0'dan küçük olamaz");
         }
 
-
-
-
     }
 }
