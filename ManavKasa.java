@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ManavKasa {
+    public static void main(String[] args)
+    {
+        double armut =2.14,elma=3.67, domates=1.11, muz=0.95,patlican=5.00;
+        double kg, toplam, total=0;
+        Scanner input =new Scanner(System.in);
+
+        System.out.print("Armut kaç kilo ? :");
+        kg=input.nextDouble();
+         toplam= armut * kg;
+         total+=toplam;
+
+
+        System.out.print("Elma kaç kilo ?:");
+        kg=input.nextDouble();
+        toplam= elma * kg;
+        total+=toplam;
+
+        System.out.print("Domates kaç kilo ?:");
+        kg=input.nextDouble();
+        toplam= domates * kg;
+        total+=toplam;
+
+        System.out.print("Muz kaç kilo ?:");
+        kg=input.nextDouble();
+        toplam= muz * kg;
+        total+=toplam;
+
+
+        System.out.print("Patlıcan kaç kilo ?:");
+        kg=input.nextDouble();
+        toplam= patlican * kg;
+        total+=toplam;
+
+
+        double roundedTotal = Math.round(total * 100.0) / 100.0;
+        System.out.print("Toplam Tutar: " + roundedTotal + " TL");
+    }
+}
