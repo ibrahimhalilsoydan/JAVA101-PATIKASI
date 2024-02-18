@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class AsalSayi {
+
+    static boolean isPrime(int number, int divisor){
+        if (divisor==number){
+            return true;
+        }
+        if (number % divisor ==0){
+            return false;
+        }
+        return isPrime(number,divisor + 1);
+    }
+
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Lütfen bir sayı giriniz : ");
+        int userInput = input.nextInt();
+
+        boolean isPrimeResult = isPrime(userInput,2);
+        if (isPrimeResult){
+            System.out.println(userInput + " asal bir sayıdır.");
+        }else {
+            System.out.println(userInput+ " asal bir sayı degildir.");
+        }
+    }
+}
